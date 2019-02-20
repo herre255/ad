@@ -1,0 +1,128 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+@font-face {
+	font-family: strato_c;
+	src: url(../fonts/strato_cesello.woff2);
+}
+
+@font-face {
+	font-family: strato_e;
+	src: url(../fonts/strato_eclisse.woff2);
+}
+
+@font-face {
+	font-family: strato_i;
+	src: url(../fonts/strato_inline.woff2);
+}
+
+@font-face {
+	font-family: strato_r;
+	src: url(../fonts/strato_roman.woff2);
+}
+
+@font-face {
+	font-family: strato_t;
+	src: url(../fonts/strato_tonale.woff2);
+}
+.container {
+	width: 720px;
+	height: 300px;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	background: yellow;
+	z-index: -1;
+}
+.grad {
+	position: absolute;
+	width: 720px;
+	height: 300px;
+	background: linear-gradient(75deg,red, yellow, #dba24a, #fffa8a);
+	background-size: 300% 300%;
+	animation: gradientt 15s infinite;
+}
+@keyframes gradientt {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+.imagecontainer {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	left: 8%;
+	background: url("../images/pizza.png");
+}
+.l1 {
+	font-family: strato_r;
+	font-size: 100px;
+	color: #B22222;
+	top: 30%;
+	left: 6%;
+	position: absolute;
+	animation: turn 5s;
+	transform: translateZ(50px);
+}
+.l2 {
+	font-family: strato_e;
+	font-size: 100px;
+	color: #FF6347;
+	top: 30%;
+	left: 6%;
+	position: absolute;
+	animation: turn 5s;
+	transform: translateZ(100px);
+}
+.l3 {
+	font-family: strato_c;
+	font-size: 100px;
+	color: #8B0000;
+	top: 30%;
+	left: 6%;
+	position: absolute;
+	animation: turn 5s;
+	transform: translateZ(200px);
+}
+.l4 {
+	font-family: strato_t;
+	font-size: 100px;
+	color: #800000;
+	top: 30%;
+	left: 6%;
+	position: absolute;
+	animation: turn 5s;
+	transform: translateZ(250px);
+}
+.l5 {
+	font-family: strato_i;
+	font-size: 100px;
+	color: #FF0000;
+	top: 30%;
+	left: 6%;
+	position: absolute;
+	animation: turn 5s;
+	transform: translateZ(300px);
+}
+.price {
+	font-family: strato_i;
+	font-size: 50px;
+	top: 65%;
+	left: 35%;
+	position: absolute;
+	color: white;
+}
+.brand {
+	font-family: strato_i;
+	font-size: 30px;
+	top: 17%;
+	left: 34%;
+	position: absolute;
+	color: white;
+}
+@keyframes turn {
+	0% {transform: rotateX(0deg) rotateY(0deg);}
+	30% {transform: rotateZ(0deg) rotateY(180deg);}
+	100% {transform: rotateZ(0deg) rotateY(0deg);}
